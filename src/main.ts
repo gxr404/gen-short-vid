@@ -1,6 +1,7 @@
 import path from 'node:path'
 import fs from 'node:fs/promises'
 import ffmpegPath from 'ffmpeg-static'
+import ffprobePath from 'ffprobe-static'
 import ffmpeg from 'fluent-ffmpeg'
 
 import { copyFileList } from './utils'
@@ -38,6 +39,7 @@ export async function run(options: Options) {
   if (!ffmpegPath)
     throw new Error('not found ffmpeg path')
   ffmpeg.setFfmpegPath(ffmpegPath)
+  ffmpeg.setFfprobePath(ffprobePath.path)
 
   options = {
     ...getDefaultOptions(),

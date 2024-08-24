@@ -14,6 +14,9 @@ importers:
       ffmpeg-static:
         specifier: ^5.2.0
         version: 5.2.0
+      ffprobe-static:
+        specifier: ^3.1.0
+        version: 3.1.0
       fluent-ffmpeg:
         specifier: ^2.1.3
         version: 2.1.3
@@ -1465,6 +1468,9 @@ packages:
   ffmpeg-static@5.2.0:
     resolution: {integrity: sha512-WrM7kLW+do9HLr+H6tk7LzQ7kPqbAgLjdzNE32+u3Ff11gXt9Kkkd2nusGFrlWMIe+XaA97t+I8JS7sZIrvRgA==}
     engines: {node: '>=16'}
+
+  ffprobe-static@3.1.0:
+    resolution: {integrity: sha512-Dvpa9uhVMOYivhHKWLGDoa512J751qN1WZAIO+Xw4L/mrUSPxS4DApzSUDbCFE/LUq2+xYnznEahTd63AqBSpA==}
 
   figures@1.7.0:
     resolution: {integrity: sha512-UxKlfCRuCBxSXU4C6t9scbDyWZ4VlaFFdojKtzJuSkuOBQ5CNFum+zZXFwHjo+CxBC1t6zlYPgHIgFjL8ggoEQ==}
@@ -4783,6 +4789,8 @@ snapshots:
       progress: 2.0.3
     transitivePeerDependencies:
       - supports-color
+
+  ffprobe-static@3.1.0: {}
 
   figures@1.7.0:
     dependencies:
