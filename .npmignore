@@ -4,7 +4,7 @@ node_modules
 tests
 .vscode
 .temp
-.vscode
+.DS_Store
 
 eslint.config.mjs
 .editorconfig
