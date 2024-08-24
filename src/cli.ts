@@ -33,7 +33,7 @@ cli
       options.videoPath = videoPath
       logger.debug(options)
       const resultList = await run(options)
-      logger.info('√  Success \\(^o^)/ ')
+      logger.info('√ Success \\(^o^)/ ')
       resultList.forEach((item, index) => {
         logger.info(`    ${index === resultList.length - 1 ? '└' : '├'}──── ${item}`)
       })
