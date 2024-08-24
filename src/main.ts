@@ -6,6 +6,7 @@ import ffmpeg from 'fluent-ffmpeg'
 
 import { copyFileList } from './utils'
 import { addBgImg, segmentVideo, splitVideo, textAndSizeVideo } from './handler'
+import { SUPPORT_VIDEO_TYPE } from './constant'
 
 export interface Options {
   videoPath: string
@@ -107,9 +108,8 @@ export async function run(options: Options) {
 }
 
 export function checkValidity(options: Options) {
-  const supportType = ['.mp4', '.avi', '.mkv', '.mov', '.wmv', '.flv']
   const videoExtName = path.extname(options.videoPath)
-  if (!supportType.includes(videoExtName)) {
+  if (!SUPPORT_VIDEO_TYPE.includes(videoExtName)) {
     throw new Error('not supported video type')
   }
 

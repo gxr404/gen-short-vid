@@ -1,9 +1,13 @@
 import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import ffmpeg from 'fluent-ffmpeg'
 import ffmpegPath from 'ffmpeg-static'
 import type { AudioVideoFilter } from 'fluent-ffmpeg'
 import type { Options } from '../main'
 import { echoEndProgress, echoProgress, getVideoInfo, logger } from '../utils'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 export async function textAndSizeVideo(options: Options, sourceVideoPath: string, index = 0) {
   if (!ffmpegPath)
@@ -23,7 +27,7 @@ export async function textAndSizeVideo(options: Options, sourceVideoPath: string
 
   // 添加文字
   if (options.text) {
-    const fontPath = path.join(import.meta.dirname, '../../assets/fonts/ChillReunion_Round.otf')
+    const fontPath = path.join(__dirname, '../../assets/fonts/ChillReunion_Round.otf')
     const rawW = videoInfo.w
     const rawH = videoInfo.h
     let w = options.width
