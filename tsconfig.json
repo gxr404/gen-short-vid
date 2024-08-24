@@ -1,0 +1,8 @@
+{
+  "references": [
+    // Source files (e.g. everything under "./src").
+    { "path": "./tsconfig.src.json" },
+    // Integration tests (e.g. everything under "./tests").
+    { "path": "./tsconfig.test.json" },
+  ]
+}

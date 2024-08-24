@@ -1,0 +1,17 @@
+{
+  "include": ["./tests"],
+  "compilerOptions": {
+    "composite": true,
+    "target": "esnext",
+    "module": "esnext",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Node",
+    "types": [
+      "@types/node",
+      "vitest/globals"
+    ]
+  },
+  "references": [{
+    "path": "./tsconfig.src.json"
+  }]
+}
