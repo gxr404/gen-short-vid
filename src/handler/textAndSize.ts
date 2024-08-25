@@ -1,4 +1,5 @@
 import path from 'node:path'
+import os from 'node:os'
 import { fileURLToPath } from 'node:url'
 import ffmpeg from 'fluent-ffmpeg'
 import ffmpegPath from 'ffmpeg-static'
@@ -27,7 +28,12 @@ export async function textAndSizeVideo(options: Options, sourceVideoPath: string
 
   // 添加文字
   if (options.text) {
-    const fontPath = path.join(__dirname, '../../assets/fonts/ChillReunion_Round.otf')
+    let fontPath = path.join(__dirname, '../../assets/fonts/ChillReunion_Round.otf')
+    if (os.platform() === 'win32') {
+      fontPath = fontPath.replace(/\\/g, '/')
+      fontPath = fontPath.replace(':', '\\\\:')
+    }
+    logger.debug('fontPath -->', fontPath)
     const rawW = videoInfo.w
     const rawH = videoInfo.h
     let w = options.width
