@@ -97,7 +97,7 @@ Options:
 
 源视频 demo.mp4
 
-<video src="[./docs/demo.mp4](https://raw.githubusercontent.com/gxr404/gen-short-vid/main/docs/demo.mp4)" width="300"></video>
+<video src="https://raw.githubusercontent.com/gxr404/gen-short-vid/main/docs/demo.mp4" width="300"></video>
 
 ```bash
 gen-short-vid demo.mp4 \
@@ -112,7 +112,7 @@ gen-short-vid demo.mp4 \
 
 输出的 0_demo.mp4 的结果
 
-<video src="[./docs/1/0_demo.mp4](https://raw.githubusercontent.com/gxr404/gen-short-vid/main/docs/1/0_demo.mp4)" width="300"></video>
+<video src="https://raw.githubusercontent.com/gxr404/gen-short-vid/main/docs/1/0_demo.mp4" width="300"></video>
 
 ### 使用背景图生成短视频
 
@@ -126,7 +126,7 @@ gen-short-vid demo.mp4 \
 
 输出的 0_demo.mp4 的结果
 
-<video src="[./docs/2/0_demo.mp4](https://raw.githubusercontent.com/gxr404/gen-short-vid/main/docs/2/0_demo.mp4)" width="300"></video>
+<video src="https://raw.githubusercontent.com/gxr404/gen-short-vid/main/docs/2/0_demo.mp4" width="300"></video>
 
 ### 分割出某个时间段的视频
 
@@ -136,4 +136,4 @@ gen-short-vid demo.mp4  --splitStartTime "00:04:00.000" --splitEndTime "00:08:00
 
 输出的 0_demo.mp4 的结果
 
-<video src="[./docs/2/0_demo.mp4](https://raw.githubusercontent.com/gxr404/gen-short-vid/main/docs/3/0_demo.mp4)" width="300"></video>
+<video src="https://raw.githubusercontent.com/gxr404/gen-short-vid/main/docs/3/0_demo.mp4" width="300"></video>
