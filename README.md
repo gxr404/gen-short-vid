@@ -95,9 +95,7 @@ Options:
 
 ## Example
 
-源视频 demo.mp4
-
-<video src="https://raw.githubusercontent.com/gxr404/gen-short-vid/main/docs/demo.mp4" width="300"></video>
+[源视频 demo.mp4](https://raw.githubusercontent.com/gxr404/gen-short-vid/main/docs/demo.mp4)
 
 ```bash
 gen-short-vid demo.mp4 \
