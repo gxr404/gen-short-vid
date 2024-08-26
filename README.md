@@ -112,7 +112,7 @@ gen-short-vid demo.mp4 \
 
 输出的 0_demo.mp4 的结果
 
-<video src="https://raw.githubusercontent.com/gxr404/gen-short-vid/main/docs/1/0_demo.mp4" width="300"></video>
+<video src="https://github.com/user-attachments/assets/048095e4-876d-4918-a197-9d73d5866ac5" width="300"></video>
 
 ### 使用背景图生成短视频
 
@@ -126,7 +126,7 @@ gen-short-vid demo.mp4 \
 
 输出的 0_demo.mp4 的结果
 
-<video src="https://raw.githubusercontent.com/gxr404/gen-short-vid/main/docs/2/0_demo.mp4" width="300"></video>
+<video src="https://github.com/user-attachments/assets/0b841264-6e7b-4161-bea7-0068989c3734"></video>
 
 ### 分割出某个时间段的视频
 
@@ -136,4 +136,4 @@ gen-short-vid demo.mp4  --splitStartTime "00:04:00.000" --splitEndTime "00:08:00
 
 输出的 0_demo.mp4 的结果
 
-<video src="https://raw.githubusercontent.com/gxr404/gen-short-vid/main/docs/3/0_demo.mp4" width="300"></video>
+<video src="https://github.com/user-attachments/assets/ff333d88-3946-4234-83ea-62904ff2ffe7" width="300"></video>
