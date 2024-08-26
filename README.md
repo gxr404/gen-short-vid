@@ -95,7 +95,10 @@ Options:
 
 ## Example
 
-[源视频 demo.mp4](https://raw.githubusercontent.com/gxr404/gen-short-vid/main/docs/demo.mp4)
+源视频 demo.mp4
+
+https://github.com/user-attachments/assets/95941cfb-12e9-4f39-9f2b-dab7deca72fa
+
 
 ```bash
 gen-short-vid demo.mp4 \
