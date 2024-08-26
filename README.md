@@ -2,7 +2,7 @@
 
 `gen-short-vid`是一个基于 `ffmpeg` 开发的便捷工具，用于从长视频中生成短视频。
 
-![gen-short-vid](https://socialify.git.ci/gxr404/gen-short-vid/image?font=Rokkitt&forks=1&issues=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fgxr404%2Fgen-short-vid%2Fmain%2Fassets%2Flogo.svg&stargazers=1&theme=Light)
+![gen-short-vid](https://socialify.git.ci/gxr404/gen-short-vid/image?font=Rokkitt&forks=1&issues=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fgxr404%2Fgen-short-vid%2Fmain%2Fdocs%2Flogo.svg&stargazers=1&theme=Light)
 
 ## Install
 
@@ -26,20 +26,20 @@ For more info, run any command with the `--help` flag:
 
 Options:
   -o, --outputPath <dir>             输出的目录 eg: -o output_dir (default: output)
-  --width <width>                    输出的视频的宽 eg: --width 1080 
-  --height <height>                  输出的视频的高 eg: --height 1920 
-  --text <text>                      添加视频标题文本 eg: --text "Hello world!" 
-  --fontSize <fontSize>              视频标题文本字体大小 eg: --fontSize 32 
-  --showTextIndex                    视频标题文本添加索引号 eg: --showTextIndex 
-  --textColor <textColor>            视频标题文本色 eg: --textColor "#f49857" 
-  --textBgColor <textBgColor>        视频标题文本背景色 eg: --textBgColor "#f49857" 
-  --padColor <padColor>              宽高超出视频填充的背景色 eg: --padColor "#f49857" 
-  --segmentTime <segmentTime>        视频片段时间, 按指定时间长度分片成多个视频 eg: --segmentTime "00:02:00.000" 
-  --bgImg <bgImg>                    添加视频背景图(输出的视频尺寸以背景图为准，不能和width、height一起使用) eg: --bgImg "./bg.jpg" 
-  --splitStartTime <splitStartTime>  分割视频的开始时间 eg: --splitStartTime "00:02:00.000" 
-  --splitEndTime <splitEndTime>      分割视频的结束时间 eg: --splitEndTime "00:04:00.000" 
-  -h, --help                         Display this message 
-  -v, --version                      Display version number 
+  --width <width>                    输出的视频的宽 eg: --width 1080
+  --height <height>                  输出的视频的高 eg: --height 1920
+  --text <text>                      添加视频标题文本 eg: --text "Hello world!"
+  --fontSize <fontSize>              视频标题文本字体大小 eg: --fontSize 32
+  --showTextIndex                    视频标题文本添加索引号 eg: --showTextIndex
+  --textColor <textColor>            视频标题文本色 eg: --textColor "#f49857"
+  --textBgColor <textBgColor>        视频标题文本背景色 eg: --textBgColor "#f49857"
+  --padColor <padColor>              宽高超出视频填充的背景色 eg: --padColor "#f49857"
+  --segmentTime <segmentTime>        视频片段时间, 按指定时间长度分片成多个视频 eg: --segmentTime "00:02:00.000"
+  --bgImg <bgImg>                    添加视频背景图(输出的视频尺寸以背景图为准，不能和width、height一起使用) eg: --bgImg "./bg.jpg"
+  --splitStartTime <splitStartTime>  分割视频的开始时间 eg: --splitStartTime "00:02:00.000"
+  --splitEndTime <splitEndTime>      分割视频的结束时间 eg: --splitEndTime "00:04:00.000"
+  -h, --help                         Display this message
+  -v, --version                      Display version number
 
 ```
 
