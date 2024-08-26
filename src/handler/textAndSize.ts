@@ -42,10 +42,10 @@ export async function textAndSizeVideo(options: Options, sourceVideoPath: string
       w = rawW
       h = rawH
     }
-    else if (w && (!h || options.bgImgPath) && (rawW && rawH)) {
+    else if (w && (!h || options.bgImg) && (rawW && rawH)) {
       h = rawH * (w / rawW)
     }
-    else if (h && (!w || options.bgImgPath) && (rawW && rawH)) {
+    else if (h && (!w || options.bgImg) && (rawW && rawH)) {
       w = rawW * (h / rawH)
     }
     // const w = options.w || rawW

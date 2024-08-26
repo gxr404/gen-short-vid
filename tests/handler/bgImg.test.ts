@@ -5,7 +5,7 @@ import { addBgImg } from '../../src/handler'
 import { getVideoInfo } from '../../src/utils'
 
 const videoPath = path.join(import.meta.dirname, '../fixtures/demo.mp4')
-const bgImgPath = path.join(import.meta.dirname, '../fixtures/bg.jpg')
+const bgImg = path.join(import.meta.dirname, '../fixtures/bg.jpg')
 const baseOutputPath = path.join(import.meta.dirname, '../.temp/handler_bgImg')
 
 it('background img', async () => {
@@ -17,7 +17,7 @@ it('background img', async () => {
   const resultPath = await addBgImg({
     videoPath,
     outputPath,
-    bgImgPath,
+    bgImg,
   }, videoPath)
   const videoInfo = await getVideoInfo(resultPath)
 

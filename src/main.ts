@@ -21,7 +21,7 @@ export interface Options {
   showTextIndex?: boolean
   // -segment_time 00:02:00.000
   segmentTime?: string
-  bgImgPath?: string
+  bgImg?: string
   splitStartTime?: string
   splitEndTime?: string
 }
@@ -84,7 +84,7 @@ export async function run(options: Options) {
   }
 
   // add background image
-  if (options.bgImgPath) {
+  if (options.bgImg) {
     // const promiseList = targetList.map((target, index) => {
     //   return addBgImg(options, target, index)
     // })
@@ -113,7 +113,7 @@ export function checkValidity(options: Options) {
     throw new Error('not supported video type')
   }
 
-  if (options.bgImgPath && (options.width || options.height)) {
-    throw new Error('when setting "bgImgPath", cannot set "width" or "height"')
+  if (options.bgImg && (options.width || options.height)) {
+    throw new Error('when setting "bgImg", cannot set "width" or "height"')
   }
 }

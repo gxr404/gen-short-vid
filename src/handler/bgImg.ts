@@ -13,14 +13,14 @@ export async function addBgImg(options: Options, sourceVideoPath: string, index 
   ffmpegCommand.addInput(sourceVideoPath)
 
   // 添加背景图
-  const hasBgImg = Boolean(options.bgImgPath)
-  const bgImgPath = options.bgImgPath || ''
+  const hasBgImg = Boolean(options.bgImg)
+  const bgImg = options.bgImg || ''
   const fileName = path.basename(options.videoPath)
   const targetFileName = `bg_img_${index}_${fileName}`
   const targetVideoPath = path.resolve(options.outputPath, './.temp', targetFileName)
 
   if (hasBgImg) {
-    ffmpegCommand.addInput(bgImgPath)
+    ffmpegCommand.addInput(bgImg)
     ffmpegCommand.complexFilter('[0][1]scale2ref=w=iw:h=ow/mdar[vid][bg];[bg][vid]overlay=(W-w)/2:(H-h)/2')
     // ffmpegCommand.complexFilter('overlay=0:0')
 

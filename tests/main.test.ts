@@ -10,7 +10,7 @@ const videoPath = path.join(import.meta.dirname, './fixtures/demo.mp4')
 // const videoPath = path.join(import.meta.dirname, './fixtures/demo.mov')
 // const videoPath = path.join(import.meta.dirname, './fixtures/demo.mkv')
 
-const bgImgPath = path.join(import.meta.dirname, './fixtures/bg.jpg')
+const bgImg = path.join(import.meta.dirname, './fixtures/bg.jpg')
 const baseOutputPath = path.join(import.meta.dirname, './.temp/combination')
 
 describe('combination function', () => {
@@ -64,7 +64,7 @@ describe('combination function', () => {
       outputPath,
       textColor: '#f49857',
       padColor: '#f49857',
-      bgImgPath,
+      bgImg,
     })
     const videoInfo = await getVideoInfo(resultPath[0])
 
@@ -88,7 +88,7 @@ describe('combination function', () => {
       padColor: '#f49857',
       splitStartTime: '00:01:00',
       splitEndTime: '00:02:00',
-      bgImgPath,
+      bgImg,
     })
     const videoInfo = await getVideoInfo(resultPath[0])
 
@@ -226,7 +226,7 @@ describe('combination function', () => {
       text: 'Hello world',
       textBgColor: 'black',
       padColor: '#9f8203',
-      bgImgPath,
+      bgImg,
       outputPath,
     })
 
@@ -252,7 +252,7 @@ describe('combination function', () => {
       showTextIndex: true,
       textBgColor: 'black',
       padColor: '#9f8203',
-      bgImgPath,
+      bgImg,
       outputPath,
     })
 
@@ -290,12 +290,12 @@ describe('check validity', () => {
         outputPath: 'xxx',
         width: 1080,
         height: 1920,
-        bgImgPath: 'xxx',
+        bgImg: 'xxx',
       })
     }
     catch (e: any) {
       isError = true
-      expect(e.message).toBe('when setting "bgImgPath", cannot set "width" or "height"')
+      expect(e.message).toBe('when setting "bgImg", cannot set "width" or "height"')
     }
     expect(isError).toBeTruthy()
   })

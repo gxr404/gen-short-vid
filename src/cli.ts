@@ -25,7 +25,7 @@ cli
   .option('--textBgColor <textBgColor>', '视频标题文本背景色 eg: --textBgColor "#f49857"')
   .option('--padColor <padColor>', '宽高超出视频填充的背景色 eg: --padColor "#f49857"')
   .option('--segmentTime <segmentTime>', '视频片段时间, 按指定时间长度分片成多个视频 eg: --segmentTime "00:02:00.000"')
-  .option('--bgImgPath <bgImgPath>', '添加视频背景图(输出的视频尺寸以背景图为准，不能和width、height一起使用) eg: --bgImgPath "./bg.jpg"')
+  .option('--bgImg <bgImg>', '添加视频背景图(输出的视频尺寸以背景图为准，不能和width、height一起使用) eg: --bgImg "./bg.jpg"')
   .option('--splitStartTime <splitStartTime>', '分割视频的开始时间 eg: --splitStartTime "00:02:00.000"')
   .option('--splitEndTime <splitEndTime>', '分割视频的结束时间 eg: --splitEndTime "00:04:00.000"')
   .action(async (videoPath, options: Options) => {
