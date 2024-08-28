@@ -12,6 +12,8 @@ export function segmentVideo(options: Options, sourceVideoPath: string) {
 
   const ffmpegCommand = ffmpeg()
   ffmpegCommand.addInput(sourceVideoPath)
+  ffmpegCommand.outputOptions('-c copy')
+
   const segmentVideoPath = path.resolve(options.outputPath, './.temp')
   const fileName = path.basename(options.videoPath)
 

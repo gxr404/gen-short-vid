@@ -19,6 +19,7 @@ export async function textAndSizeVideo(options: Options, sourceVideoPath: string
 
   const ffmpegCommand = ffmpeg()
   ffmpegCommand.addInput(sourceVideoPath)
+  // ffmpegCommand.outputOptions('-c copy')
 
   const fileName = path.basename(options.videoPath)
   const targetFileName = `text_size_${index}_${fileName}`

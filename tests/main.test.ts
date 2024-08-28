@@ -136,7 +136,8 @@ describe('combination function', () => {
     expect(videoInfo.time).toBeLessThanOrEqual(2 * 60 + 10)
     expect(videoInfo.w).toBe(960)
     expect(videoInfo.h).toBe(626)
-    expect(videoInfo.size).toBe(13118681)
+    expect(videoInfo.size).toBe(13296191)
+    // expect(videoInfo.size).toBe(13118681)
   })
 
   it('split & segment & text & custom size video', async () => {
@@ -162,7 +163,8 @@ describe('combination function', () => {
     expect(videoInfo.time).toBeLessThanOrEqual(2 * 60 + 10)
     expect(videoInfo.w).toBe(540)
     expect(videoInfo.h).toBe(960)
-    expect(videoInfo.size).toBe(6476453)
+    expect(videoInfo.size).toBe(6544058)
+    // expect(videoInfo.size).toBe(6476453)
   })
 
   it('split & segment & text & width video', async () => {
@@ -187,7 +189,8 @@ describe('combination function', () => {
     expect(videoInfo.time).toBeLessThanOrEqual(2 * 60 + 10)
     expect(videoInfo.w).toBe(540)
     expect(videoInfo.h).toBe(330)
-    expect(videoInfo.size).toBe(6509255)
+    expect(videoInfo.size).toBe(6570950)
+    // expect(videoInfo.size).toBe(6509255)
   })
 
   it('split & segment & text & height video', async () => {
@@ -212,7 +215,8 @@ describe('combination function', () => {
     expect(videoInfo.time).toBeLessThanOrEqual(2 * 60 + 10)
     expect(videoInfo.w).toBe(444)
     expect(videoInfo.h).toBe(270)
-    expect(videoInfo.size).toBe(5360606)
+    expect(videoInfo.size).toBe(5403864)
+    // expect(videoInfo.size).toBe(5360606)
   })
 
   it('split & segment & text & background image video', async () => {
@@ -237,7 +241,8 @@ describe('combination function', () => {
     expect(videoInfo.time).toBeLessThanOrEqual(2 * 60 + 10)
     expect(videoInfo.w).toBe(1080)
     expect(videoInfo.h).toBe(1920)
-    expect(videoInfo.size).toBe(16706022)
+    expect(videoInfo.size).toBe(16864508)
+    // expect(videoInfo.size).toBe(16706022)
   })
 
   it('split & segment & text (show text index) & background image video', async () => {
@@ -263,7 +268,8 @@ describe('combination function', () => {
     expect(videoInfo.time).toBeLessThanOrEqual(2 * 60 + 10)
     expect(videoInfo.w).toBe(1080)
     expect(videoInfo.h).toBe(1920)
-    expect(videoInfo.size).toBe(16730408)
+    expect(videoInfo.size).toBe(16881860)
+    // expect(videoInfo.size).toBe(16730408)
   })
 })
 

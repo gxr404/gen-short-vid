@@ -22,5 +22,6 @@ it('only segment', async () => {
   expect(videoInfo.time).toBeGreaterThanOrEqual(1 * 60)
   expect(videoInfo.w).toBe(960)
   expect(videoInfo.h).toBe(540)
-  expect(videoInfo.size).toBe(11239713)
+  expect(videoInfo.size).toBe(11630837)
+  // expect(videoInfo.size).toBe(11239713)
 })

@@ -11,6 +11,7 @@ export async function addBgImg(options: Options, sourceVideoPath: string, index 
 
   const ffmpegCommand = ffmpeg()
   ffmpegCommand.addInput(sourceVideoPath)
+  // ffmpegCommand.outputOptions('-c copy')
 
   // 添加背景图
   const hasBgImg = Boolean(options.bgImg)
