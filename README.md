@@ -64,7 +64,7 @@ Options:
   - `--bgImg ./bg.jpg`
 
 ```bash
-gen-short-vid/0.0.5
+gen-short-vid/0.0.7
 
 Usage:
   $ gen-short-vid <videoPath>
